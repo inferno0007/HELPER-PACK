@@ -1,0 +1,178 @@
+{
+	"env": {
+		"API_ID": {
+			"description": "Get this value from https://my.telegram.org"
+		},
+		"API_HASH": {
+			"description": "Get this value from https://my.telegram.org"
+		},
+		"DATABASE_URL": {
+			"description": "Mongodb url from https://cloud.mongodb.com/, guide: https://del.dog/mongodb_guide"
+		},
+		"HEROKU_APP_NAME": {
+			"description": "Given app name to the Heroku App"
+		},
+		"LOG_CHANNEL_ID": {
+			"description": "[ Private Telegram Log Channel ID ], Note: Also add your Bot to LOG CHANNEL !"
+		},
+		"HEROKU_API_KEY": {
+			"description": "[Required] Get a Heroku API key from http://dashboard.heroku.com/account",
+			"required": false
+		},
+		"HU_STRING_SESSION": {
+			"description": "Get this using 'https://repl.it/@Leorio/stringsessiongen' or `bash genStr`",
+			"required": false
+		},
+		"BOT_TOKEN": {
+			"description": "Get this from https://t.me/botfather and enable Inline Mode. (ADD YOUR BOT IN LOG CHANNEL)",
+			"required": false
+		},
+		"UPSTREAM_REPO": {
+			"description": "fill only if you maintain a fork !, else leave empty",
+			"required": false,
+      "value": "https://github.com/inferno0007/HAVOC-UB"
+		},
+		"OWNER_ID": {
+			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
+			"required": false
+		},
+		"ALIVE_MEDIA": {
+			"description": "telegra.ph or t.me link of image or video",
+			"required": false
+		},
+		"INSTA_ID": {
+			"description": "Your Insta ID as name says",
+			"required": false
+		},
+		"INSTA_PASS": {
+			"description": "Your Insta Pass as name says",
+			"required": false
+		},
+		"SPAM_WATCH_API": {
+			"description": "Get SpamWatch API from @SpamWatch on Telegram.",
+			"required": false
+		},
+		"CURRENCY_API": {
+			"description": "Currency API ID(BTW this shit doesn't work)",
+			"required": false
+		},
+		"OCR_SPACE_API_KEY": {
+			"description": "Yget it from http://eepurl.com/bOLOcf",
+			"required": false
+		},
+		"OPEN_WEATHER_MAP": {
+			"description": "To get Weather API, visit openweathermap.org",
+			"required": false
+		},
+		"WEATHER_DEFCITY": {
+			"description": "default city name for weather api",
+			"required": false
+		},
+		"REMOVE_BG_API_KEY": {
+			"description": "Go to www.remove.bg/api.",
+			"required": false
+		},
+		"GCS_API_KEY": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"GCS_IMAGE_E_ID": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_DRIVE_CLIENT_ID": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_DRIVE_CLIENT_SECRET": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_DRIVE_PARENT_ID": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_DRIVE_IS_TD": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_PHOTOS_AUTH_TOKEN_ID": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_PHOTOS_CLIENT_ID": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"G_PHOTOS_CLIENT_SECRET": {
+			"description": "gdrive shit",
+			"required": false
+		},
+		"BOT_MEDIA": {
+			"description": "telegra.ph or t.me link of image or video",
+			"required": false
+		},
+		"SPOTIFY_CLIENT_SECRET": {
+			"description": "Spotify API",
+			"required": false
+		},
+		"IMGFLIP_ID": {
+			"description": "ImageFlip API id",
+			"required": false
+		},
+		"IMGFLIP_PASS": {
+			"description": "ImageFlip API id",
+			"required": false
+		},
+		"ALLOW_NSFW": {
+			"description": "False Recommended, but you can keep it to True ;D",
+			"required": false
+		},
+		"PM_LOG_GROUP_ID": {
+			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
+			"required": false
+		},
+		"DEEP_AI": {
+			"description": "For NSFW detector, it's no use btw, but go for it just an extra plugin",
+			"required": false
+		},
+		"LASTFM_USERNAME": {
+			"description": "LastFM API",
+			"required": false
+		},
+		"LASTFM_API_KEY": {
+			"description": "LastFM API",
+			"required": false
+		},
+		"LASTFM_API_KEY": {
+			"description": "LastFM API",
+			"required": false
+		},
+		"ARL_TOKEN": {
+			"description": "Just in case you wanna use Deezer",
+			"required": false
+		},
+		"CH_LYDIA_API": {
+			"description": "Lydia API key",
+			"required": false
+		},
+		"PREF_BRANCH": {
+			"description": "Upstream repo preffered branch. (Dont Touch This !)",
+			"required": false,
+			"value": "alpha"
+		}
+	},
+	"buildpacks": [
+		{
+			"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+		},
+		{ "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab.git" },
+		{ "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip" },
+		{ "url": "https://github.com/ashwinstr/heroku-buildpack-google-chrome" },
+		{ "url": "https://github.com/ashwinstr/heroku-buildpack-chromedriver" },
+		{ "url": "https://github.com/chrismytton/heroku-buildpack-jq.git" },
+		{ "url": "https://github.com/justaprudev/heroku-buildpack-neofetch.git" },
+		{ "url": "https://github.com/dishapatel010/mediainfo_buildpack.git" },
+		{ "url": "heroku/python" }
+	]
+}
